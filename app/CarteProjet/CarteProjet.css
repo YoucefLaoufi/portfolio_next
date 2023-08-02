@@ -1,0 +1,27 @@
+.information h4{
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.carte img{
+border-radius: 5%;
+width: 400px;
+height: 300px;
+}
+.link{
+    text-decoration: none;
+}
+.carte{
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+  
+  
+  
+  
+  

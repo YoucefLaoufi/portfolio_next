@@ -1,0 +1,86 @@
+.contact {
+    background-color: black;
+    padding: 60px 0 60px 0;
+    display: flex;
+  }
+ .info{  
+    width: 400px;
+    margin-right: 75px;
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin-top: 40px;
+ }
+
+ .titre{
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 30px;
+ }
+ .youcef-adr{
+    background-color: rgb(39, 39, 39);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    text-align: center;
+
+
+
+ }
+ .youcef{
+    background-color: rgb(39, 39, 39);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    text-align: center;
+
+    
+ }
+ .picNet{
+    width: 17%;
+    height: 17%;
+
+    margin-right: 10px;
+
+ }
+ .picC{
+    width: 22%;
+    height: 22%;
+    /*margin-right: 20px;*/
+ }
+ 
+ 
+  .contact h2 {
+    color: aliceblue;
+      font-size: 45px;
+      font-weight: 700;
+      margin-bottom: 30px;
+  }
+  .image{
+    display: flex;
+  }
+  .image img {
+    border-radius: 5%;
+    border: 2px solid gray;
+    height: 300px;
+    width: 400px;
+    margin: 10px 10px;
+  }
+
+  .description{
+    text-align: center;
+    color: aliceblue;
+     font-size: 14px;
+     letter-spacing: 0.8px;
+     line-height: 1.5em;
+     margin-top: 10px;
+     margin-left: 100px;
+     border: 3px solid rgba(255, 255, 255, 0.5);
+     border-radius: 20px;
+     padding: 5px 5px;
+  }
