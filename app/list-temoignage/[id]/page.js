@@ -34,6 +34,7 @@ const EditTemoignage = ({ params }) => {
         const { name, value, checked, type } = event.target
         type !== 'checkbox' && validateField(name, value)
         setState(previousState => ({ ...previousState, [name]: type === 'checkbox' ? checked : value }))
+        validateField(name,value)
     }
 
     // Valider chaque champ avec des conditions donnees
@@ -88,8 +89,15 @@ const EditTemoignage = ({ params }) => {
 
     function submit(event) {
         event.preventDefault()
-        isFormValid() && id && dispatch(updateTemoignage(state, id))
-        router.push('/temoignages')
+        if (!isFormValid()) {
+            return;
+          }
+        
+          dispatch(updateTemoignage(state, id));
+          router.push('/temoignages');
+          alert("Le temoignage a été modifer avec succès");
+
+     
 
     }
 

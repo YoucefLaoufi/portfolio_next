@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Container, Row, Col} from "react-bootstrap";
 import {  useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { addTemoignage, getTemoignage, updateTemoignage ,getAllTemoignages,deleteTemoignage} from "@/store/reducers/temoignageReducer"
+import { addTemoignage, getTemoignage ,getAllTemoignages,deleteTemoignage} from "@/store/reducers/temoignageReducer"
 import { useRouter } from "next/navigation";
 import './temoignage.css'
 const AddTemoignage = () => {
@@ -43,7 +43,6 @@ const AddTemoignage = () => {
         message: '',
         numero: '',
         email: ''
-       // temoignages: []
     })
 
     // Erreur de validation
@@ -124,7 +123,7 @@ const AddTemoignage = () => {
     router.push(`/list-temoignage/${id}`)
 }
 
-function supprimer(id) {  // Supprimer l'element clique
+function supprimer(id) {  
     dispatch(deleteTemoignage(id))
 }
 
@@ -133,27 +132,17 @@ function getTemoignages() {
         .then(() => { })
         .catch(err => console.log('Erreur lecture des etudiants', err))
 }
-/*function submit(event) {
-        event.preventDefault() // Eviter le rafraichissement de la page ( eviter la soumission)
-        dispatch(addTemoignage({ ...state, id: temoignages.length + 1 }))
-        setState(prev => ({
-            ...prev,
-            prenom: '',
-            nom: '',
-            email: '',
-            message:''
-           
-        }))  // Reinitialiser la forme apres la soumission
-    }*/
-   
+
     function submit(event) {
         event.preventDefault()
             isFormValid() && dispatch(addTemoignage({ ...state, id: temoignages.length + 1 }))
+            alert("Temoignage envoyé avec succès");
             setState(prev => ({
                 ...prev,
                 prenom: '',
                 nom: '',
                 email: '',
+                numero:'',
                 message:''
 
             }))
