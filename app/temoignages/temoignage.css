@@ -1,0 +1,166 @@
+.card{
+    background-color: black;
+    margin-bottom: 80px ;
+    margin-top: 80px;
+
+}
+
+.card form input, .card form textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 350px;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .card form input:focus, .card form textarea:focus {
+    background: rgba(255, 255, 255, 1);
+    color: #121212;
+  }
+  .card form input::placeholder, .card form textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .card form input:focus::placeholder, .card form textarea:focus::placeholder {
+    color: #121212;
+    opacity: 0.8;
+  }
+  .card form button {
+    font-weight: 700;
+    color: #ffffff;
+    background-color:rgba(255, 255, 255, 0.1);
+    padding: 14px 48px;
+    font-size: 18px;
+    margin-left: 650px;
+    margin-top: 5px;
+    border-radius: 25px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+  .card form button span {
+    z-index: 0;
+    position: relative;
+  }
+  .card form button:hover {
+    color: #000000;
+   
+
+  }
+  .card form button::before {
+    content: "";
+    background: #ffffff;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 25px;
+
+  }
+  .card form button:hover::before {
+    width: 100%;
+  }
+  
+  .card h2 {
+    font-size: 45px;
+    font-weight: 700;
+   color: #fff;
+   text-align: center;
+   margin-bottom: -5px;
+}
+.invalid-feedback_contact {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: -8px;
+    display: block;
+    margin-left: 350px;
+  }
+
+  /*/////////////////////////////////////*/
+  .titre_liste {
+    color: #fff;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+}
+.liste {
+    color: #fff;
+
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .liste th,
+  .liste td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .liste th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+ .liste .entete{
+    background-color: #292929;
+ }
+
+  .btnn {
+    font-weight: 700;
+    color: #ffffff;
+    background-color:rgba(255, 255, 255, 0.1);
+    padding: 14px 35px;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 590px;
+    border-radius: 25px;
+    border: 1px solid grey;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+  .btnn span{
+    z-index: 1;
+    position: relative;
+  }
+
+.btnn:hover {
+    color: #000000;
+    border: 1px solid grey;
+
+  }
+  .btnn::before {
+    content: "";
+    background: #ffffff;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 25px;
+
+
+  }
+  .btnn:hover::before {
+    width: 100%;
+  }

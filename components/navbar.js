@@ -15,7 +15,7 @@ export const NavBar = () => {
               <Nav.Link href="/home" className= 'navbar-link'>Accueil</Nav.Link>
               <Nav.Link href="/contact" className= 'navbar-link'>Contact</Nav.Link>
               <Nav.Link href="/projets" className='navbar-link' >Projets</Nav.Link>
-              <Nav.Link href="/list-temoignage" className='navbar-link' >Témoignage</Nav.Link>
+              <Nav.Link href="/temoignages" className='navbar-link' >Témoignage</Nav.Link>
               </Nav>   
           </Navbar.Collapse> 
         </Container>

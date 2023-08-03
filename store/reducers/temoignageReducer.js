@@ -9,13 +9,13 @@ const CURRENT_TEMOIGNAGE = 'CURRENT_TEMOIGNAGE'
 
 //2 - Createurs d'actions (retournent un objet)
 
-export const addTemoignage = (user) => ({ type: ADD_TEMOIGNAGE, payload: user })
+export const addTemoignage = (temoignage) => ({ type: ADD_TEMOIGNAGE, payload: temoignage })
 
-export const updateTemoignage = (user, id) => ({ type: UPDATE_TEMOIGNAGE, payload: { user, id } })
+export const updateTemoignage = (temoignage, id) => ({ type: UPDATE_TEMOIGNAGE, payload: { temoignage, id } })
 
 export const deleteTemoignage = id => ({ type: DELETE_TEMOIGNAGE, payload: { id } })
 
-export const getAllTemoignage = (users) => ({ type: LIST_TEMOIGNAGE, payload: users })
+export const getAllTemoignages = (temoignages) => ({ type: LIST_TEMOIGNAGE, payload: temoignages })
 
 export const getTemoignage = id => ({ type: CURRENT_TEMOIGNAGE, payload: { id } })
 
@@ -34,18 +34,18 @@ export const temoignageReducer = (state = initialState, action) => {
     const { type, payload } = action
     switch (type) {
         case LIST_TEMOIGNAGE:
-            return { ...state, users: payload }
+            return { ...state, temoignages: payload }
         case CURRENT_TEMOIGNAGE:
-            return { ...state, user: state.users.find(user => user.id === payload.id) }
+            return { ...state, temoignage: state.temoignages.find(temoignage => temoignage.id === payload.id) }
 
         case ADD_TEMOIGNAGE:
-            return { ...state, users: [...state.users, payload] }
+            return { ...state, temoignages: [...state.temoignages, payload] }
 
         case UPDATE_TEMOIGNAGE:
-            return { ...state, users: state.users.map(user => user.id == payload.id ? payload.user : user) }
+            return { ...state, temoignages: state.temoignages.map(temoignage => temoignage.id == payload.id ? payload.temoignage : temoignage) }
 
         case DELETE_TEMOIGNAGE:
-            return { ...state, users: state.users.filter(user => user.id !== payload.id) }
+            return { ...state, temoignages: state.temoignages.filter(temoignage => temoignage.id !== payload.id) }
 
         default:
             return state
